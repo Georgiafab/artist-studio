@@ -12,7 +12,8 @@ import { config, queryClient } from '@/config/walletConnect';
 
 import "@/style/globals.css";
 
-// import Header from "@/components/Header";
+import Header from "@/components/Header";
+import Head from "next/head";
 
 //@ts-ignores
 // import { NotificationProvider } from "@web3uikit/core";
@@ -23,16 +24,19 @@ import "@/style/globals.css";
 export default function Home({ Component, pageProps }: AppProps) {
   return (
     <div>
-
-
       <WagmiProvider config={config}>
         <QueryClientProvider client={queryClient}>
           <RainbowKitProvider>
-            {/* <Header></Header>; */}
+            <Head>
+              <title>NFT Market</title>
+              <meta name="description" content="NFT Market"></meta>
+              <link rel="icon" href="./favicon.ico"></link>
+            </Head>
+            <Header></Header>;
             <Component {...pageProps} />
           </RainbowKitProvider>
         </QueryClientProvider>
       </WagmiProvider>
     </div >
-  );
+  )
 }
