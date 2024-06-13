@@ -63,3 +63,5 @@ contract ERC20Token {
 }
 
 // 0x2AF374aA4DE0559be70b254a49F1A8B7edc23689
+
+// localhost: 0x5FbDB2315678afecb367f032d93F642f64180aa3

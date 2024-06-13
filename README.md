@@ -20,7 +20,7 @@
 - 在本地网络上测试合约：
   `npx hardhat test --network localhost`
 - 在本地网络上部署合约：
-  `px hardhat ignition deploy ./ignition/modules/Lock.ts --network localhost`
+  `npx hardhat ignition deploy ./ignition/modules/ERC20Token.ts --network localhost`
 
 ---
 

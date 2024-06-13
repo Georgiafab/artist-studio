@@ -32,7 +32,7 @@ export default function Home({ Component, pageProps }: AppProps) {
               <meta name="description" content="NFT Market"></meta>
               <link rel="icon" href="./favicon.ico"></link>
             </Head>
-            <Header></Header>;
+            <Header></Header>
             <Component {...pageProps} />
           </RainbowKitProvider>
         </QueryClientProvider>

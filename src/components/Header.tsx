@@ -16,7 +16,7 @@ export default function Header() {
         <ul className="lg:flex flex-1 lg:items-center pl-12">
           {
             routeList.map((item: routeItemType) => {
-              return <li className="m-2 text-base mr-5">
+              return <li className="m-2 text-base mr-5" key={item.href}>
                 <Link href={item.href}>{item.label}</Link>
               </li>
             })

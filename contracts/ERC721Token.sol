@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity >=0.8.2 <0.9.0;
 
 contract ERC721Token {
     string public name;
@@ -70,3 +70,4 @@ contract ERC721Token {
 }
 
 // 0x6F817c5d3ccd451fd38B4cB77E78d85FD1F0810d
+// localhost: 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512

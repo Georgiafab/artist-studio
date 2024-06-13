@@ -5,7 +5,7 @@ pragma solidity >=0.8.2 <0.9.0;
 import "./ERC20Token.sol";
 import "./ERC721Token.sol";
 
-contract myNFTMarket {
+contract NFTMarket {
     ERC20Token public tokenContract;
     ERC721Token public nftContract;
 
@@ -43,6 +43,14 @@ contract myNFTMarket {
         tokenContract = ERC20Token(_tokenContractAddress);
         nftContract = ERC721Token(_nftContractAddress);
     }
+    function getTokenContract() external view returns (ERC20Token) {
+        return tokenContract;
+    }
+
+    function getNftContract() external view returns (ERC721Token) {
+        return nftContract;
+    }
+
     // 上架NFT
     function listNFT(
         address _nftContract,
@@ -102,3 +110,4 @@ contract myNFTMarket {
 }
 
 // 0x804D1F8eDcd0dC5F87D25F2B36D0655a7CABf50A
+// localhost: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
