@@ -107,7 +107,17 @@ contract NFTMarket {
             listing.price
         );
     }
+
+    // 获取所有上架的NFT列表长度
+    function listingsLength() external view returns (uint256) {
+        return listings.length;
+    }
+
+    // 获取所有上架的NFT
+    function getAllListings() external view returns (Listing[] memory) {
+        return listings;
+    }
 }
 
-// 0x804D1F8eDcd0dC5F87D25F2B36D0655a7CABf50A
+// 0x56a1bc3578bfa8d881cf2ddf177c0bef62070a11
 // localhost: 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0

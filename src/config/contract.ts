@@ -20,7 +20,7 @@ export const getTokenContract = async () => {
 
 export const getMarketContract = async () => {
   return getContract(
-    "0x804D1F8eDcd0dC5F87D25F2B36D0655a7CABf50A",
+    "0x56a1bc3578bfa8d881cf2ddf177c0bef62070a11",
     NFTMarket.abi
   );
 };
